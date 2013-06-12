@@ -1,0 +1,151 @@
+html, body, form {height:100%;}
+
+.login-window
+{
+    
+    position: absolute;    
+    border: 2px solid #000000;    
+    left: 50%;    
+    top: 50%;    
+    background-color: #ffffff;    
+    height: 200px;    
+    width: 350px;    
+    margin: -100px 0px 0px -175px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    overflow: hidden;
+    z-index: 9001;
+    box-shadow: 2px 2px 2px #cdcdcd;
+    -moz-box-shadow: 2px 2px 10px #333333;
+    -webkit-box-shadow: 2px 2px 2px #cdcdcd;
+    padding:20
+}
+
+
+
+.login-window .login-title 
+{
+    padding: 5px 10px;
+    font-size: 12px Arial;
+    color: white;
+    height: 20px;
+     margin-top: 10px;
+    background: #808080 no-repeat 6px 6px;
+}
+
+
+
+.main-top {
+    width:100%;
+    background:#999999;
+    padding-left:2px;
+    padding-right:2px;
+    height: 30px;
+    border-bottom:1px solid #bbbbbb;
+    color: #ffffff;
+}
+
+.main-filter {
+    background:#bbbbbb;
+    padding:2px;
+    height: 30px;
+    color: #000000;
+}
+
+
+.main-center {
+    vertical-align:top;
+    padding:5px;   
+}
+
+.main-bottom {
+    width:100%;
+    background:#999999;
+    text-shadow: 0px 0px 2px #ffffff;
+    color:#333333;
+    padding:2px;
+    height: 25px;
+    border-top:1px solid #bbbbbb;
+}
+
+
+
+
+
+
+
+.asbtn {
+   color: #ffffff;
+   text-decoration: none;
+   font:10pt Arial;
+}
+
+.asbtn:hover {
+   color: #ffffff;
+   text-shadow: 0px 0px 2px black;
+   text-decoration: none;
+   font:10pt Arial;
+}
+
+
+.logout {
+   color: #ffffff;
+text-shadow: 0px 0px 2px black;
+   text-decoration: none;
+   font:12pt Arial;
+}
+
+
+
+
+
+
+
+.activmenu_s {
+   background:#bbbbbb;
+   padding-top:6px;
+   padding-bottom:6px;
+}
+
+.activmenu_d {
+   padding-top:6px;
+   padding-bottom:6px;
+}
+
+
+
+
+.status {
+  background:#ffaaaa;
+  border:1px solid #ff0000;
+  height:20px;
+  font:10pt Arial;
+  padding:2px;
+  width:100%; 
+}
+
+
+.tbl_head {
+   background: #496184;
+   border-collapse: collapse;
+   border:1px solid #000000;
+   color: #ffffff;
+   padding:2px;
+}
+
+.tbl_cell {
+   border-collapse: collapse;
+   border:1px solid #000000;
+   color: #000000;
+   padding:2px;
+}
+
+
+.tbl_row {
+   background: #ffffff;
+}
+
+.tbl_row:hover {
+   background: #bdd0ec;
+}
