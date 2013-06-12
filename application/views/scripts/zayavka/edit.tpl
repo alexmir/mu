@@ -63,9 +63,11 @@
 
             <tr height="10"><td>Лоти</td><td> <select style="width:300px;" multiple name="lots" id="lots" value="<?php echo $this->zayavka->lots; ?>" class="chzn-select">
                      <option value=""></option>
+                    <?php if($this->lots):?>
                    <?php foreach ($this->lots as $lot): ?>
                         <option value="<?php echo $lot->lid; ?>"><?php echo $lot->snm; ?> [<?php echo $lot->ltyp; ?>]</option>
                     <?php endforeach; ?>   
+                    <?php endif;?>
                 </select>
                 <input type="button" title="Додати лот" value="+" id="AddLots"/>
             </td></tr>   
@@ -96,15 +98,7 @@
     $("#fid").chosen().change(function(e) {
         e.preventDefault();
         var $frm = $(this);
-        $.post("/zayavka/lots", $frm.serialize(), function(responce) {
-            if (responce.error == 0) {             
-            }
-            $frm.find(".status").text(responce.message);
-            if (document.getElementById("status").innerHTML != "")
-                document.getElementById("status").style.display = "";
-            else
-                document.getElementById("status").style.display = "none";
-        }, "text");       
+        $.post("/zayavka/lots", $frm.serialize());       
     }
     );
     
